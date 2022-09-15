@@ -1,0 +1,36 @@
+.title{
+    position: relative;
+    color: #fff;
+}
+.rotate-words{
+    display: inline;
+    margin-left: 10px;
+}
+.rotate-words span{
+    width: max-content;
+    position: absolute;
+    background-color: #bb93fc;
+    padding-inline: 10px;
+    opacity: 0;
+    transform-origin: 10% 75%;
+    animation: rotatewords 12s
+    var(--d) linear infinite;
+}
+@keyframes rotatewords {
+    5%{
+        opacity: 1;
+    }
+    10%,
+    20%{
+        opacity: 1;
+        transform: rotate(3deg);
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    25%{
+        opacity: 0;
+        transform: translateY(90px)
+        rotate(10deg);
+    }
+}

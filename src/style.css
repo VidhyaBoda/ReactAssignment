@@ -1,0 +1,72 @@
+* {
+        font-family: 'Poppins', sans-serif;
+        color:#000;
+    }
+
+    body {
+        background-color: #111827;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .card {
+        height: 15rem;
+        width: 15rem;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .card img {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .card:hover .details {
+        opacity: 1;
+        height: 100%;
+    }
+
+    .details {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+
+    .details h2 {
+        margin: 0;
+    }
+
+    .details p {
+        margin: 2px 0;
+        font-size: 10px;
+    }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  float:left ;
+  content: "";
+  display: table;
+  clear: both;
+}
